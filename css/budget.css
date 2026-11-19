@@ -1,0 +1,147 @@
+
+/* ===================================
+   POKETCARE BUDGET PAGE STYLING
+   =================================== */
+
+/* SUMMARY CARDS */
+
+.budget-summary-card {
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.budget-summary-card .card-body {
+    padding: 25px;
+}
+
+.budget-summary-card h3 {
+    color: #154b36;
+    font-weight: 700;
+    font-size: 27px;
+}
+
+/* ICONS */
+
+.budget-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 22px;
+}
+
+.green-icon {
+    background-color: #e1f3e5;
+    color: #23864d;
+}
+
+.red-icon {
+    background-color: #fce8e8;
+    color: #c84b4b;
+}
+
+.blue-icon {
+    background-color: #e6f0ff;
+    color: #3677c8;
+}
+
+/* CATEGORY CARDS */
+
+.category-budget-card {
+    border: 1px solid #e5ece7;
+    border-radius: 12px;
+    background-color: #ffffff;
+    padding: 20px;
+    height: 100%;
+    transition: 0.2s;
+}
+
+.category-budget-card:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    transform: translateY(-2px);
+}
+
+.category-budget-card h6 {
+    font-weight: 700;
+    color: #154b36;
+}
+
+.category-budget-card .progress {
+    height: 10px;
+    margin-top: 12px;
+}
+
+/* BUDGET TABLE */
+
+.table th {
+    white-space: nowrap;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.remaining-positive {
+    color: #198754;
+    font-weight: 600;
+}
+
+.remaining-negative {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+/* EDIT BUTTON */
+
+.edit-budget-btn {
+    border-radius: 8px;
+    padding: 6px 12px;
+}
+
+/* MODAL */
+
+.modal-content {
+    border: none;
+    border-radius: 14px;
+}
+
+.modal-header {
+    background-color: #e8f4eb;
+    border-radius: 14px 14px 0 0;
+}
+
+.modal-title {
+    color: #154b36;
+    font-weight: 700;
+}
+
+.form-label {
+    color: #154b36;
+    font-weight: 600;
+}
+
+.form-control:focus {
+    border-color: #236344;
+    box-shadow: 0 0 0 3px rgba(35,99,68,0.12);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 576px) {
+
+    .budget-summary-card h3 {
+        font-size: 23px;
+    }
+
+    .category-budget-card {
+        padding: 15px;
+    }
+
+    .table {
+        font-size: 13px;
+    }
+
+}

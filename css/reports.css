@@ -1,0 +1,155 @@
+
+/* ===================================
+   POKETCARE REPORTS PAGE
+   =================================== */
+
+/* DOWNLOAD BUTTON */
+
+.download-btn {
+    background-color: #236344;
+    border: none;
+    border-radius: 9px;
+    padding: 12px 20px;
+    font-weight: 600;
+}
+
+.download-btn:hover {
+    background-color: #154b36;
+}
+
+/* REPORT PERIOD */
+
+.report-period {
+    background-color: #e8f4eb;
+    color: #154b36;
+    border: 1px solid #d4e9d9;
+    border-radius: 10px;
+    padding: 16px 20px;
+}
+
+/* SUMMARY CARDS */
+
+.report-summary-card {
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+    transition: 0.2s;
+}
+
+.report-summary-card:hover {
+    transform: translateY(-3px);
+}
+
+.report-summary-card .card-body {
+    padding: 23px;
+}
+
+.report-summary-card h3 {
+    color: #154b36;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+/* SUMMARY ICONS */
+
+.report-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 22px;
+}
+
+.green-icon {
+    background-color: #e1f3e5;
+    color: #23864d;
+}
+
+.red-icon {
+    background-color: #fce8e8;
+    color: #c84b4b;
+}
+
+.blue-icon {
+    background-color: #e6f0ff;
+    color: #3677c8;
+}
+
+.yellow-icon {
+    background-color: #fff3d7;
+    color: #c68b1d;
+}
+
+/* CHARTS */
+
+.report-chart-container {
+    position: relative;
+    width: 100%;
+    height: 320px;
+}
+
+/* REPORT TABLE */
+
+.table th {
+    white-space: nowrap;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.report-amount {
+    font-weight: 600;
+    color: #154b36;
+}
+
+.report-negative {
+    font-weight: 600;
+    color: #dc3545;
+}
+
+/* FINANCIAL INSIGHTS */
+
+.insight-box {
+    background-color: #f5f9f5;
+    border: 1px solid #e2ebe3;
+    border-radius: 12px;
+    padding: 20px;
+    height: 100%;
+}
+
+.insight-box h6 {
+    color: #154b36;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.insight-box p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 576px) {
+
+    .download-btn {
+        width: 100%;
+    }
+
+    .report-summary-card h3 {
+        font-size: 22px;
+    }
+
+    .report-chart-container {
+        height: 270px;
+    }
+
+    .table {
+        font-size: 13px;
+    }
+
+}

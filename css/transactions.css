@@ -1,0 +1,116 @@
+
+/* ===================================
+   POKETCARE TRANSACTIONS PAGE
+   =================================== */
+
+/* ADD TRANSACTION BUTTON */
+
+.add-btn {
+    background-color: #236344;
+    border: none;
+    border-radius: 9px;
+    padding: 12px 20px;
+    font-weight: 600;
+}
+
+.add-btn:hover {
+    background-color: #154b36;
+}
+
+/* TRANSACTION SUMMARY CARDS */
+
+.transaction-summary-card {
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+    height: 100%;
+}
+
+.transaction-summary-card .card-body {
+    padding: 25px;
+}
+
+.transaction-summary-card h3 {
+    color: #154b36;
+    font-weight: 700;
+    font-size: 28px;
+}
+
+/* SEARCH AND FILTER */
+
+.form-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #154b36;
+}
+
+.form-control,
+.form-select {
+    border: 1px solid #cbd7cf;
+    border-radius: 8px;
+    padding: 11px 14px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #236344;
+    box-shadow: 0 0 0 3px rgba(35,99,68,0.12);
+}
+
+/* TABLE */
+
+.table thead th {
+    background-color: #e1f3e5;
+    color: #154b36;
+    white-space: nowrap;
+}
+
+.table tbody td {
+    vertical-align: middle;
+}
+
+.transaction-amount {
+    color: #b94c4c;
+    font-weight: 600;
+}
+
+/* DELETE BUTTON */
+
+.delete-btn {
+    border-radius: 7px;
+    padding: 6px 11px;
+}
+
+/* MODAL */
+
+.modal-content {
+    border: none;
+    border-radius: 14px;
+}
+
+.modal-header {
+    background-color: #e8f4eb;
+    border-radius: 14px 14px 0 0;
+}
+
+.modal-title {
+    color: #154b36;
+    font-weight: 700;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 576px) {
+
+    .add-btn {
+        width: 100%;
+    }
+
+    .transaction-summary-card h3 {
+        font-size: 24px;
+    }
+
+    .table {
+        font-size: 13px;
+    }
+}

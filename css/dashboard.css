@@ -1,0 +1,335 @@
+
+/* ===================================
+   POKETCARE DASHBOARD STYLING
+   =================================== */
+
+:root {
+    --primary: #154b36;
+    --secondary: #236344;
+    --light-green: #e8f4eb;
+    --background: #f5f7f5;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--background);
+    margin: 0;
+}
+
+/* ===================================
+   SIDEBAR
+   =================================== */
+
+.sidebar {
+    width: 260px;
+    min-height: 100vh;
+    background-color: var(--primary);
+    color: white;
+    flex-shrink: 0;
+}
+
+.sidebar .offcanvas-body {
+    padding: 25px 15px;
+}
+
+/* SIDEBAR BRAND */
+
+.sidebar-brand {
+    padding: 15px 10px 20px;
+    text-align: center;
+}
+
+/* POKETCARE LOGO */
+
+.sidebar-logo {
+    width: 100px;
+    height: auto;
+}
+
+/* POKETCARE TITLE - BLACK */
+
+.sidebar-brand h4 {
+    color: #000000 !important;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+/* STUDENT FINANCIAL MANAGEMENT - DARK GREY */
+
+.sidebar-brand small {
+    color: #333333 !important;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+/* SIDEBAR DIVIDER */
+
+.sidebar-divider {
+    border-color: #719482;
+    opacity: 0.5;
+}
+
+/* SIDEBAR NAVIGATION */
+
+.sidebar-nav .nav-link {
+    color: #dcebdd;
+    padding: 14px 18px;
+    border-radius: 9px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.sidebar-nav .nav-link i {
+    margin-right: 12px;
+    font-size: 18px;
+}
+
+.sidebar-nav .nav-link:hover,
+.sidebar-nav .nav-link.active {
+    background-color: #337a55;
+    color: white;
+}
+
+/* LOGOUT BUTTON */
+
+.logout-btn {
+    background-color: #e8f4eb;
+    color: var(--primary);
+    font-weight: 600;
+    padding: 12px;
+}
+
+.logout-btn:hover {
+    background-color: #cde7d3;
+    color: var(--primary);
+}
+
+/* ===================================
+   MOBILE NAVBAR
+   =================================== */
+
+.mobile-navbar {
+    background-color: var(--primary);
+}
+
+/* ===================================
+   MAIN CONTENT
+   =================================== */
+
+.main-content {
+    min-width: 0;
+    padding: 35px;
+}
+
+.page-title {
+    font-weight: 700;
+    color: var(--primary);
+}
+
+/* ===================================
+   SUMMARY CARDS
+   =================================== */
+
+.summary-card {
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+    transition: 0.2s;
+}
+
+.summary-card:hover {
+    transform: translateY(-3px);
+}
+
+.summary-card h3 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #183b2c;
+}
+
+/* SUMMARY ICON */
+
+.summary-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 22px;
+}
+
+.green-icon {
+    background-color: #e1f3e5;
+    color: #23864d;
+}
+
+.red-icon {
+    background-color: #fce8e8;
+    color: #c84b4b;
+}
+
+.blue-icon {
+    background-color: #e6f0ff;
+    color: #3677c8;
+}
+
+.yellow-icon {
+    background-color: #fff3d7;
+    color: #c68b1d;
+}
+
+/* ===================================
+   CONTENT CARDS
+   =================================== */
+
+.content-card {
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.content-card .card-header {
+    background-color: white;
+    border-bottom: 1px solid #edf0ed;
+    padding: 20px;
+}
+
+.content-card .card-header h5 {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.content-card .card-body {
+    padding: 22px;
+}
+
+/* ===================================
+   CHART
+   =================================== */
+
+.chart-container {
+    position: relative;
+    height: 300px;
+    width: 100%;
+}
+
+/* ===================================
+   BUDGET
+   =================================== */
+
+.progress {
+    background-color: #e4e9e5;
+    border-radius: 20px;
+}
+
+.progress-bar {
+    border-radius: 20px;
+}
+
+.category-row {
+    margin-bottom: 18px;
+}
+
+.category-row .progress {
+    height: 8px;
+    margin-top: 7px;
+}
+
+/* ===================================
+   BOOTSTRAP TABLE
+   =================================== */
+
+.table {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+.table th {
+    font-weight: 600;
+    color: #154b36;
+    white-space: nowrap;
+    padding: 14px;
+}
+
+.table td {
+    padding: 13px 14px;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #edf5ee;
+}
+
+.amount-text {
+    font-weight: 600;
+    color: #b94c4c;
+}
+
+/* ===================================
+   FOOTER
+   =================================== */
+
+.dashboard-footer {
+    padding: 20px;
+    color: #888;
+    font-size: 12px;
+    border-top: 1px solid #e0e6e1;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN - DESKTOP
+   =================================== */
+
+@media (min-width: 992px) {
+
+    .sidebar {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+    }
+
+}
+
+/* ===================================
+   RESPONSIVE DESIGN - TABLET
+   =================================== */
+
+@media (max-width: 991px) {
+
+    .sidebar {
+        width: 260px;
+        min-height: auto;
+    }
+
+    .main-content {
+        padding: 25px 20px;
+    }
+
+}
+
+/* ===================================
+   RESPONSIVE DESIGN - MOBILE
+   =================================== */
+
+@media (max-width: 576px) {
+
+    .main-content {
+        padding: 20px 15px;
+    }
+
+    .page-title {
+        font-size: 25px;
+    }
+
+    .summary-card h3 {
+        font-size: 23px;
+    }
+
+    .chart-container {
+        height: 260px;
+    }
+
+}

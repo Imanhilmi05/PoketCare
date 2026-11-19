@@ -1,0 +1,170 @@
+
+/* POKETCARE LOGIN PAGE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f8faf7;
+}
+
+/* LEFT SECTION */
+
+.left-section {
+    min-height: 100vh;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    position: relative;
+    padding: 40px;
+}
+
+/* Dark overlay for readability */
+
+.background-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(9, 55, 35, 0.55);
+}
+
+/* Logo and text */
+
+.left-content {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+.poketcare-logo {
+    width: 220px;
+    max-width: 85%;
+    height: auto;
+    margin-bottom: 25px;
+}
+
+.left-content h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.left-content p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* RIGHT SECTION */
+
+.right-section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 420px;
+}
+
+.login-box h2 {
+    font-size: 34px;
+    font-weight: 700;
+    color: #154b36;
+    margin-bottom: 10px;
+}
+
+.login-description {
+    color: #777;
+    margin-bottom: 35px;
+}
+
+.form-label {
+    font-weight: 600;
+    color: #154b36;
+    margin-bottom: 10px;
+}
+
+.form-control {
+    height: 52px;
+    border-radius: 9px;
+    border: 1px solid #cbd7cf;
+    padding: 12px 15px;
+}
+
+.form-control:focus {
+    border-color: #236344;
+    box-shadow: 0 0 0 3px rgba(35, 99, 68, 0.12);
+}
+
+.form-control[readonly] {
+    background-color: #edf3ee;
+}
+
+/* LOGIN BUTTON */
+
+.login-btn {
+    height: 52px;
+    background-color: #236344;
+    color: white;
+    font-weight: 600;
+    border-radius: 9px;
+    transition: 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #154b36;
+    color: white;
+}
+
+/* FOOTER */
+
+.login-footer {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 12px;
+    color: #888;
+}
+
+/* RESPONSIVE MOBILE */
+
+@media (max-width: 767px) {
+
+    .left-section {
+        min-height: 300px;
+        padding: 30px 20px;
+    }
+
+    .poketcare-logo {
+        width: 140px;
+    }
+
+    .left-content h1 {
+        font-size: 25px;
+    }
+
+    .left-content p {
+        font-size: 14px;
+    }
+
+    .right-section {
+        min-height: auto;
+        padding: 50px 25px;
+    }
+
+    .login-box h2 {
+        font-size: 28px;
+    }
+}

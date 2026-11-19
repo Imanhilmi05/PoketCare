@@ -1,0 +1,178 @@
+
+/* ===================================
+   POKETCARE STUDENT PROFILE
+   =================================== */
+
+/* EDIT PROFILE BUTTON */
+
+.edit-profile-btn {
+    background-color: #236344;
+    border: none;
+    border-radius: 9px;
+    padding: 12px 20px;
+    font-weight: 600;
+}
+
+.edit-profile-btn:hover {
+    background-color: #154b36;
+}
+
+/* PROFILE HEADER */
+
+.profile-header-card {
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(
+        135deg,
+        #e8f4eb,
+        #ffffff
+    );
+    box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+}
+
+.profile-header-card .card-body {
+    padding: 30px;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    background-color: #236344;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    flex-shrink: 0;
+}
+
+.profile-header-card h3 {
+    color: #154b36;
+    font-size: 26px;
+}
+
+/* PROFILE DETAILS */
+
+.profile-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 16px 0;
+    border-bottom: 1px solid #edf0ed;
+}
+
+.profile-detail:last-child {
+    border-bottom: none;
+}
+
+.profile-detail span:first-child {
+    color: #777;
+    font-size: 14px;
+}
+
+.profile-detail strong {
+    color: #183b2c;
+    font-size: 14px;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+/* FINANCIAL MINI CARDS */
+
+.financial-mini-card {
+    background-color: #f5f9f5;
+    border: 1px solid #e2ebe3;
+    border-radius: 12px;
+    padding: 20px;
+    height: 100%;
+}
+
+.financial-mini-card h4 {
+    color: #154b36;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+/* TABLE */
+
+.table th {
+    white-space: nowrap;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.positive-amount {
+    color: #198754;
+    font-weight: 600;
+}
+
+.negative-amount {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+/* MODAL */
+
+.modal-content {
+    border: none;
+    border-radius: 14px;
+}
+
+.modal-header {
+    background-color: #e8f4eb;
+}
+
+.modal-title {
+    color: #154b36;
+    font-weight: 700;
+}
+
+.form-label {
+    color: #154b36;
+    font-weight: 600;
+}
+
+.form-control:focus {
+    border-color: #236344;
+    box-shadow: 0 0 0 3px rgba(35,99,68,0.12);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 576px) {
+
+    .edit-profile-btn {
+        width: 100%;
+    }
+
+    .profile-header-card .card-body {
+        padding: 20px;
+    }
+
+    .profile-avatar {
+        width: 75px;
+        height: 75px;
+        font-size: 38px;
+    }
+
+    .profile-header-card h3 {
+        font-size: 22px;
+    }
+
+    .profile-detail {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .profile-detail strong {
+        text-align: left;
+    }
+
+    .financial-mini-card h4 {
+        font-size: 22px;
+    }
+}
